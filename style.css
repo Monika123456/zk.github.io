@@ -17,7 +17,7 @@ body {
 }
 
 header {
-  background: url("header.png") no-repeat center center/contain;
+  background: url("header.png") no-repeat center center/cover;
   color: var(--basic-color);
   text-align: center;
   padding: 6rem 1rem;
