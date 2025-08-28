@@ -4,7 +4,7 @@
   --shadow-color: rgba(0,0,0,0.1);
   --text-color: #3D3B3A;
   --hover-color: /*#e1d6d0;*//*#d5c4bb;*/#CCB3A6;
-  --h2-color: #C07662;
+  --h1-color: #C07662;
   --program-block-color: #F6dbd4;
   --btn-color: #C07662;
 }
@@ -74,9 +74,10 @@ section {
   box-shadow: 0 3px 10px rgba(0,0,0,0.08);
 }
 
-h2 {
-  color: var(--h2-color);
+h1 {
+  color: var(--h1-color);
   margin-top: 0;
+  font-size: 2rem;
 }
 
 .program-block {
@@ -104,12 +105,96 @@ h2 {
   background: var(--hover-color);
 }
 
+/* --- Kontajner pre celú kartu --- */
+.udalost-karta {
+  display: flex; /* Kľúčová vlastnosť: rozloží obsah vedľa seba */
+  background-color: var(--basic-color);
+  border-radius: 8px; /* Zaoblenie rohov */
+  box-shadow: 0 4px 10px var(--shadow-color); /* Tieň pod kartou */
+  margin-bottom: 2rem; /* Medzera medzi udalosťami */
+  overflow: hidden; /* Zabezpečí, že zaoblenie rohov sa aplikuje aj na vnútorné divy */
+}
+
+/* --- Ľavá strana s dátumom --- */
+.udalost-cas {
+  display: flex;
+  flex-direction: column; /* Umiestniť text pod seba */
+  justify-content: center; /* Centrovať vertikálne */
+  align-items: center; /* Centrovať horizontálne */
+  flex-shrink: 0; /* Zabezpečí, že sa nezmenší, ak je názov dlhý */
+
+  background-color: var(--h1-color); 
+  color: var(--basic-color);
+  padding: 1rem 1.5rem;
+  font-weight: bold;
+}
+
+/* Štýl pre cas */
+.udalost-cas .cas {
+  font-size: 1.5rem;
+  margin: 0;
+  line-height: 1;
+}
+
+/* --- Pravá strana s názvom --- */
+.udalost-nazov {
+  flex-grow: 1; /* Umožní tomuto divu zabrať všetok dostupný priestor */
+  flex-direction: column; /* Umiestni prvky pod seba */
+  padding: 2rem;
+  display: flex;
+  align-items: flex-start; /* Centrovať text vertikálne */
+}
+
+.udalost-nazov h2 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: var(--text-color);
+  margin-bottom: 0.2;
+}
+
+.udalost-nazov p {
+  font-size: 1rem;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.sprievod-kontajner {
+  display: flex;              /* Kľúčová vlastnosť: umiestni boxy vedľa seba */
+  gap: 1rem;                  /* Medzera medzi boxmi */
+  justify-content: space-around; /* Rozmiestni boxy rovnomerne */
+  align-items: center;        /* Zarovná boxy na stred vertikálne */
+  padding: 1rem;
+}
+
+.sprievod-box {
+  background-color: var(--program-block-color);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  border-top: 4px solid var(--btn-color); 
+}
+
+sprievod-box a:hover {
+  background: var(--hover-color);
+  transform: scale(1.1);
+}
+
+.sprievod-box h2 {
+    font-size: 1.7rem;
+    margin-bottom: 0.2;
+}
+
+.sprievod-box p {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
 .logo-kontajner {
   display: flex; /* Použi flexbox pre centrovanie obrázka v kontajneri */
   justify-content: center; /* Centruje horizontálne */
   align-items: center;   /* Centruje vertikálne */
-  width: 200px;
-  height: 200px; 
+  width: 150px;
+  height: 150px; 
   
   /* Nastavenia pre obrázok vo vnútri */
   position: relative;
