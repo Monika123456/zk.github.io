@@ -6,48 +6,95 @@
   <title>Konferencia 2025</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
+      font-family: "Segoe UI", Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f9f9f9;
+      background: #f5f7fa;
       color: #333;
     }
     header {
-      background: #4a6fa5;
+      background: url("header.png") no-repeat center center/cover;
       color: white;
-      padding: 1.5rem;
       text-align: center;
+      padding: 6rem 1rem;
+      position: relative;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.45);
+    }
+    header h1, header p {
+      position: relative;
+      z-index: 1;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0 0 0.5rem;
     }
     nav {
-      background: #355a8a;
-      padding: 0.5rem;
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: white;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 100;
     }
     nav a {
-      color: white;
+      color: #355a8a;
       text-decoration: none;
-      margin: 0 1rem;
       font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #1a365f;
     }
     section {
+      max-width: 900px;
+      margin: 2rem auto;
       padding: 2rem;
-      max-width: 800px;
-      margin: auto;
       background: white;
-      margin-top: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
     }
     h2 {
       color: #355a8a;
+      margin-top: 0;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    .program-block {
+      margin: 1rem 0;
+      padding: 1rem;
+      background: #eef3fb;
+      border-left: 4px solid #355a8a;
+      border-radius: 6px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background: #355a8a;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #1a365f;
     }
     footer {
       text-align: center;
-      padding: 1rem;
-      background: #4a6fa5;
+      padding: 1.5rem;
+      margin-top: 3rem;
+      background: #355a8a;
       color: white;
-      margin-top: 2rem;
     }
   </style>
 </head>
@@ -55,7 +102,7 @@
 
 <header>
   <h1>Konferencia 2025</h1>
-  <p>Téma: Budúcnosť technológií a inovácií</p>
+  <p>Budúcnosť technológií a inovácií</p>
 </header>
 
 <nav>
@@ -71,18 +118,19 @@
     Stretnú sa odborníci z oblasti technológií, výskumu a podnikania, 
     aby diskutovali o trendoch a budúcnosti inovácií.
   </p>
+  <a href="#kontakt" class="btn">Registrácia</a>
 </section>
 
 <section id="program">
   <h2>Program</h2>
-  <ul>
-    <li><strong>Deň 1</strong> – Prednášky a diskusie</li>
-    <li><strong>Deň 2</strong> – Workshopy a networking</li>
-  </ul>
-  <h3>Detailný popis</h3>
-  <p><strong>Prednášky:</strong> Odborníci predstavia nové trendy v AI, zdravotníctve a udržateľných technológiách.</p>
-  <p><strong>Workshopy:</strong> Praktické ukážky, ako implementovať nové riešenia do praxe.</p>
-  <p><strong>Networking:</strong> Priestor na nadväzovanie spoluprác medzi firmami a výskumníkmi.</p>
+  <div class="program-block">
+    <strong>Deň 1 – Prednášky a diskusie</strong>
+    <p>Odborníci predstavia nové trendy v AI, zdravotníctve a udržateľných technológiách.</p>
+  </div>
+  <div class="program-block">
+    <strong>Deň 2 – Workshopy a networking</strong>
+    <p>Praktické ukážky implementácie riešení do praxe a priestor na nadväzovanie spoluprác.</p>
+  </div>
 </section>
 
 <section id="kontakt">
