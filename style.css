@@ -6,9 +6,11 @@ body {
 }
 
 header {
-  position: relative;
-  text-align: center;
+  background: url("header.png") no-repeat center center/contain;
   color: white;
+  text-align: center;
+  padding: 6rem 1rem;
+  position: relative;
 }
 
 .header-img {
