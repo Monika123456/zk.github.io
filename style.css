@@ -17,13 +17,25 @@ body {
 }
 
 header {
-  background: url("header.png") no-repeat center center/cover;
+  background: url("header.png") no-repeat center center;
   color: var(--basic-color);
   text-align: center;
   padding: 6rem 1rem;
   position: relative;
   height: 50vh; /* 50 % výšky viewportu */
+
+  background-size: cover;
 }
+
+/* Media query pre mobilné zariadenia (napr. do 768px šírky) */
+@media screen and (max-width: 768px) {
+  header {
+    background-size: contain;
+    /* Ak je to nutné, môžeš upraviť aj výšku, aby sa odstránili medzery */
+    /* height: auto;  */
+  }
+}
+
 header::after {
   content: "";
   position: absolute;
