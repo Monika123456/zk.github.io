@@ -17,7 +17,7 @@ body {
 }
 
 header {
-  background: url("header.png") no-repeat center center;
+  background: url("images/header.png") no-repeat center center;
   color: var(--basic-color);
   text-align: center;
   padding: 6rem 1rem;
@@ -104,11 +104,69 @@ h2 {
   background: var(--hover-color);
 }
 
+.logo-kontajner {
+  display: flex; /* Použi flexbox pre centrovanie obrázka v kontajneri */
+  justify-content: center; /* Centruje horizontálne */
+  align-items: center;   /* Centruje vertikálne */
+  width: 200px;
+  height: 200px; 
+  
+  /* Nastavenia pre obrázok vo vnútri */
+  position: relative;
+  overflow: hidden;
+}
+
+.logo-kontajner img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Toto zabezpečí, že sa obrázok zmestí do kontajnera */
+  display: block; /* Odstráni prípadné extra medzery pod obrázkom */
+}
+
+.organizator-frame {
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+  background: var(--hover-color);
+  font-weight: bold;
+}
+
+.organizator-block {
+  margin: 2rem auto;
+  padding: 2rem;
+  display: flex; /* Ak chceš, aby boli logá vedľa seba */
+  gap: 1rem;     /* Medzera medzi logami */
+  flex-wrap: wrap; /* Aby sa zalomili na nový riadok, ak sa nezmestia */
+  justify-content: center; /* Centruje logá */
+  background: var(--basic-color);
+  border-radius: 12px;
+  box-shadow: 0 3px 10px var(--shadow-color);
+}
+
 .sponzori-frame {
   margin: 0.5rem auto;
   padding: 0.5rem;
   background: var(--hover-color);
   font-weight: bold;
+}
+
+.sponzori-block {
+  margin: 2rem auto;
+  padding: 2rem;
+  display: flex; /* Ak chceš, aby boli logá vedľa seba */
+  gap: 1rem;     /* Medzera medzi logami */
+  flex-wrap: wrap; /* Aby sa zalomili na nový riadok, ak sa nezmestia */
+  justify-content: center; /* Centruje logá */
+  background: var(--basic-color);
+  border-radius: 12px;
+  box-shadow: 0 3px 10px var(--shadow-color);
+}
+
+.sponzori-img {
+  margin: 2rem auto;
+  padding: 2rem;
+  background: var(--basic-color);
+  width: 200px;
+  height: auto;
 }
 
 .social-links {
