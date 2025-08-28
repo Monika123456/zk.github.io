@@ -6,12 +6,25 @@ body {
 }
 
 header {
-  background: url("header.png") no-repeat center center/contain;
-  color: white;
-  text-align: center;
-  padding: 6rem 1rem;
   position: relative;
+  text-align: center;
+  color: white;
 }
+
+.header-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
 header::after {
   content: "";
   position: absolute;
