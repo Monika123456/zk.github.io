@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (btn) {
     btn.addEventListener("click", () => {
       // tu vlož odkaz na svoj Google Formulár
-      const formUrl = "https://forms.gle/TVOJ-ODKAZ-TU";
+      const formUrl = "https://forms.gle/oSpznLecdCV2Qu1g7";
       window.open(formUrl, "_blank");
     });
   }
