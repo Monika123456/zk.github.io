@@ -32,7 +32,7 @@ header {
   header {
     background-size: contain;
     /* Ak je to nutné, môžeš upraviť aj výšku, aby sa odstránili medzery */
-    /* height: auto;  */
+    height: auto;
   }
 }
 
