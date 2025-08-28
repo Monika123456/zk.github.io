@@ -104,6 +104,13 @@ h2 {
   background: var(--hover-color);
 }
 
+.sponzori-frame {
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+  background: var(--hover-color);
+  font-weight: bold;
+}
+
 .social-links {
   margin-top: 1rem;
   display: flex;
