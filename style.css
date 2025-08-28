@@ -1,7 +1,7 @@
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
-  background: #f5f7fa;
+  background: #f9f8f6;
   color: #333;
 }
 
@@ -33,13 +33,13 @@ nav {
   z-index: 100;
 }
 nav a {
-  color: #355a8a;
+  color: #3D3B3A;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
 nav a:hover {
-  color: #1a365f;
+  color: #e1d6d0;
 }
 
 section {
@@ -52,7 +52,7 @@ section {
 }
 
 h2 {
-  color: #355a8a;
+  color: #C07662;
   margin-top: 0;
 }
 
@@ -68,7 +68,7 @@ h2 {
   display: inline-block;
   margin-top: 1.5rem;
   padding: 0.75rem 1.5rem;
-  background: #355a8a;
+  background: #C07662;
   color: white;
   font-weight: bold;
   text-decoration: none;
@@ -78,7 +78,7 @@ h2 {
   transition: background 0.3s;
 }
 .btn:hover {
-  background: #1a365f;
+  background: #e1d6d0;
 }
 
 .social-links {
@@ -94,12 +94,12 @@ h2 {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: #355a8a; /* základná farba pozadia */
+  background: #f9f8f6; /* základná farba pozadia */
   transition: background 0.3s, transform 0.2s;
 }
 
 .social-links a:hover {
-  background: #1a365f;
+  background: #e1d6d0;
   transform: scale(1.1);
 }
 
@@ -113,6 +113,6 @@ footer {
   text-align: center;
   padding: 1.5rem;
   margin-top: 3rem;
-  background: #355a8a;
+  background: #F6dbd4;
   color: white;
 }
