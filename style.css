@@ -81,6 +81,34 @@ h2 {
   background: #1a365f;
 }
 
+.social-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #355a8a; /* základná farba pozadia */
+  transition: background 0.3s, transform 0.2s;
+}
+
+.social-links a:hover {
+  background: #1a365f;
+  transform: scale(1.1);
+}
+
+.social-links svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
 footer {
   text-align: center;
   padding: 1.5rem;
